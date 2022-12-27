@@ -66,6 +66,10 @@ def create_app(test_config=None):
         the string 'Hello, World!' in this case.
     '''
 
+    # register the database commands
+    from . import db
+    db.init_app(app)
+
     return app
 
 
