@@ -59,7 +59,7 @@ def create():
             flash(error)
         else:
             db = get_db()
-            db.excute(
+            db.execute(
                 'INSERT INTO post (title, body, author_id)'
                 ' VALUES (?, ?, ?)',
                 (title, body, g.user['id'])
