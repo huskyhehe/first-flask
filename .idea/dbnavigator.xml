@@ -11,8 +11,14 @@
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
+  </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/flaskr/schema.sql" connection-id="virtual-sqlite-connection" session-id="" current-schema="" />
+    <mapping file-url="file://$PROJECT_DIR$/flaskr/schema.sql" connection-id="" session-id="" current-schema="" />
+  </component>
+  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
+    <recently-used-interfaces />
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections />
