@@ -72,8 +72,16 @@ def create_app(test_config=None):
 
     # register the blueprint from the factory
     from . import auth
+    from . import blog
     app.register_blueprint(auth.bp)
+    app.register_blueprint(blog.bp)
 
+    app.add_url_rule('/', endpoint='index')
+    '''
+    app.add_url_rule() 
+    associates the endpoint name 'index' with the / url so that 
+    url_for('index') or url_for('blog.index') will both work, 
+    generating the same / URL either way.
+    make url_for('index') == url_for('blog.index')
+    '''
     return app
-
-
