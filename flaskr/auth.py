@@ -45,7 +45,7 @@ def register():
 
     # When the user initially navigates to auth/register, or there was a validation error,
     # an HTML page with the registration form should be shown
-    return render_template('/auth/register.html')
+    return render_template('auth/register.html')
 
     '''
     @bp.route 
