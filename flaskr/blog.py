@@ -111,7 +111,7 @@ def update(id):
 def delete(id):
     get_post(id)
     db = get_db()
-    db.excute(
+    db.execute(
         'DELETE FROM post WHERE id = ?', (id, )
     )
     db.commit()
